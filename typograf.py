@@ -16,5 +16,5 @@ def typograf(post):
     edited_text = html.unescape(str(response.content, encoding='utf-8'))
     bot.edit_message_text(edited_text, post.chat.id, post.id, parse_mode='MARKDOWN')
 
-
+print('Bot is running. Press Ctrl+C to stop it.')
 bot.infinity_polling()
